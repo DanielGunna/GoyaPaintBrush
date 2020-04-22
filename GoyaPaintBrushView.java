@@ -47,7 +47,7 @@ public class GoyaPaintBrushView implements ActionListener {
     }
 
     private void addDrawerArea(){
-        drawerArea = new DrawerArea();
+        drawerArea = InjectionHelper.injectDraweArea();
         guiContent.add(drawerArea, BorderLayout.CENTER);
     }
 
